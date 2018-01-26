@@ -1,0 +1,1772 @@
+function BusDefinitions() 
+% BUSDEFINITIONS initializes a set of bus objects in the MATLAB base workspace 
+
+% Bus object: AccelerationBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'xAcc';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'yAcc';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'zAcc';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+AccelerationBus = Simulink.Bus;
+AccelerationBus.HeaderFile = '';
+AccelerationBus.Description = '';
+AccelerationBus.DataScope = 'Auto';
+AccelerationBus.Alignment = -1;
+AccelerationBus.Elements = elems;
+clear elems;
+assignin('base','AccelerationBus', AccelerationBus);
+
+% Bus object: AngularAccelerationBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'xOmegaDot';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'yOmegaDot';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'zOmegaDot';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+AngularAccelerationBus = Simulink.Bus;
+AngularAccelerationBus.HeaderFile = '';
+AngularAccelerationBus.Description = '';
+AngularAccelerationBus.DataScope = 'Auto';
+AngularAccelerationBus.Alignment = -1;
+AngularAccelerationBus.Elements = elems;
+clear elems;
+assignin('base','AngularAccelerationBus', AngularAccelerationBus);
+
+% Bus object: AngularRateBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'xOmega';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'yOmega';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'zOmega';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+AngularRateBus = Simulink.Bus;
+AngularRateBus.HeaderFile = '';
+AngularRateBus.Description = '';
+AngularRateBus.DataScope = 'Auto';
+AngularRateBus.Alignment = -1;
+AngularRateBus.Elements = elems;
+clear elems;
+assignin('base','AngularRateBus', AngularRateBus);
+
+% Bus object: AttitudeBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Roll';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Pitch';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Yaw';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'DCM';
+elems(4).Dimensions = [3 3];
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'double';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+AttitudeBus = Simulink.Bus;
+AttitudeBus.HeaderFile = '';
+AttitudeBus.Description = '';
+AttitudeBus.DataScope = 'Auto';
+AttitudeBus.Alignment = -1;
+AttitudeBus.Elements = elems;
+clear elems;
+assignin('base','AttitudeBus', AttitudeBus);
+
+% Bus object: Barometer_Bus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Altitude';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'uint16';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+Barometer_Bus = Simulink.Bus;
+Barometer_Bus.HeaderFile = '';
+Barometer_Bus.Description = '';
+Barometer_Bus.DataScope = 'Auto';
+Barometer_Bus.Alignment = -1;
+Barometer_Bus.Elements = elems;
+clear elems;
+assignin('base','Barometer_Bus', Barometer_Bus);
+
+% Bus object: Command_Bus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Roll';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'uint16';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Pitch';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'uint16';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Throttle';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'uint16';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'Yaw';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'uint16';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'Aux1';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'uint16';
+elems(5).SampleTime = -1;
+elems(5).Complexity = 'real';
+elems(5).SamplingMode = 'Sample based';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'Aux2';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'uint16';
+elems(6).SampleTime = -1;
+elems(6).Complexity = 'real';
+elems(6).SamplingMode = 'Sample based';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+Command_Bus = Simulink.Bus;
+Command_Bus.HeaderFile = '';
+Command_Bus.Description = '';
+Command_Bus.DataScope = 'Auto';
+Command_Bus.Alignment = -1;
+Command_Bus.Elements = elems;
+clear elems;
+assignin('base','Command_Bus', Command_Bus);
+
+% Bus object: Components 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'X_axis';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Y_axis';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Z_axis';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+Components = Simulink.Bus;
+Components.HeaderFile = '';
+Components.Description = '';
+Components.DataScope = 'Auto';
+Components.Alignment = -1;
+Components.Elements = elems;
+clear elems;
+assignin('base','Components', Components);
+
+% Bus object: ControllerBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Pitch';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'single';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Roll';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'single';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Altitude';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'single';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+ControllerBus = Simulink.Bus;
+ControllerBus.HeaderFile = '';
+ControllerBus.Description = '';
+ControllerBus.DataScope = 'Auto';
+ControllerBus.Alignment = -1;
+ControllerBus.Elements = elems;
+clear elems;
+assignin('base','ControllerBus', ControllerBus);
+
+% Bus object: Environment 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Gravity';
+elems(1).Dimensions = 3;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Density';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+Environment = Simulink.Bus;
+Environment.HeaderFile = '';
+Environment.Description = '';
+Environment.DataScope = 'Auto';
+Environment.Alignment = -1;
+Environment.Elements = elems;
+clear elems;
+assignin('base','Environment', Environment);
+
+% Bus object: ExternalCommand_Bus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'DataValid';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'uint16';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Commands';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: Command_Bus';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+ExternalCommand_Bus = Simulink.Bus;
+ExternalCommand_Bus.HeaderFile = '';
+ExternalCommand_Bus.Description = '';
+ExternalCommand_Bus.DataScope = 'Auto';
+ExternalCommand_Bus.Alignment = -1;
+ExternalCommand_Bus.Elements = elems;
+clear elems;
+assignin('base','ExternalCommand_Bus', ExternalCommand_Bus);
+
+% Bus object: GPSData 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'DataValidFlag';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'boolean';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Attitudes';
+elems(2).Dimensions = 3;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'VelocityNEU';
+elems(3).Dimensions = 3;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'Latitude';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'double';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'Longitude';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'double';
+elems(5).SampleTime = -1;
+elems(5).Complexity = 'real';
+elems(5).SamplingMode = 'Sample based';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'Altitude';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'double';
+elems(6).SampleTime = -1;
+elems(6).Complexity = 'real';
+elems(6).SamplingMode = 'Sample based';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+GPSData = Simulink.Bus;
+GPSData.HeaderFile = '';
+GPSData.Description = '';
+GPSData.DataScope = 'Auto';
+GPSData.Alignment = -1;
+GPSData.Elements = elems;
+clear elems;
+assignin('base','GPSData', GPSData);
+
+% Bus object: IMUData 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Accelerometer';
+elems(1).Dimensions = 3;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'uint16';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'AngularVelocity';
+elems(2).Dimensions = 3;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'uint16';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+IMUData = Simulink.Bus;
+IMUData.HeaderFile = '';
+IMUData.Description = '';
+IMUData.DataScope = 'Auto';
+IMUData.Alignment = -1;
+IMUData.Elements = elems;
+clear elems;
+assignin('base','IMUData', IMUData);
+
+% Bus object: InertialData 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Acceleration';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: AccelerationBus';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'AngularAcceleration';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: AngularAccelerationBus';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'AngularRate';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: AngularRateBus';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+InertialData = Simulink.Bus;
+InertialData.HeaderFile = '';
+InertialData.Description = '';
+InertialData.DataScope = 'Auto';
+InertialData.Alignment = -1;
+InertialData.Elements = elems;
+clear elems;
+assignin('base','InertialData', InertialData);
+
+% Bus object: Magnetometer_Bus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'MagMeas';
+elems(1).Dimensions = 3;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'uint16';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+Magnetometer_Bus = Simulink.Bus;
+Magnetometer_Bus.HeaderFile = '';
+Magnetometer_Bus.Description = '';
+Magnetometer_Bus.DataScope = 'Auto';
+Magnetometer_Bus.Alignment = -1;
+Magnetometer_Bus.Elements = elems;
+clear elems;
+assignin('base','Magnetometer_Bus', Magnetometer_Bus);
+
+% Bus object: MotorCommands 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P4';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: PWMBus';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P3';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: PWMBus';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P2';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: PWMBus';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P1';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: PWMBus';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+MotorCommands = Simulink.Bus;
+MotorCommands.HeaderFile = '';
+MotorCommands.Description = '';
+MotorCommands.DataScope = 'Auto';
+MotorCommands.Alignment = -1;
+MotorCommands.Elements = elems;
+clear elems;
+assignin('base','MotorCommands', MotorCommands);
+
+% Bus object: NAVStates 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'TranportData';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: TransportRateData';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'BCSData';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: NAV_BCS_States';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'NEDData';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: NAV_NED_States';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'EFEData';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: NAV_EFE_States';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'CoordinateTransformations';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: NAV_CoordinateTransformations';
+elems(5).SampleTime = -1;
+elems(5).Complexity = 'real';
+elems(5).SamplingMode = 'Sample based';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'Attitude';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: Attitudes';
+elems(6).SampleTime = -1;
+elems(6).Complexity = 'real';
+elems(6).SamplingMode = 'Sample based';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'Stability';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: StabilityStates';
+elems(7).SampleTime = -1;
+elems(7).Complexity = 'real';
+elems(7).SamplingMode = 'Sample based';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'InitialConditions';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: NAV_InitialStates';
+elems(8).SampleTime = -1;
+elems(8).Complexity = 'real';
+elems(8).SamplingMode = 'Sample based';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+NAVStates = Simulink.Bus;
+NAVStates.HeaderFile = '';
+NAVStates.Description = '';
+NAVStates.DataScope = 'Auto';
+NAVStates.Alignment = -1;
+NAVStates.Elements = elems;
+clear elems;
+assignin('base','NAVStates', NAVStates);
+
+% Bus object: NAV_BCS_States 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'VelocityBCS';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: Components';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'AccelerationBCS';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: Components';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'AngularRates';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: Components';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+NAV_BCS_States = Simulink.Bus;
+NAV_BCS_States.HeaderFile = '';
+NAV_BCS_States.Description = '';
+NAV_BCS_States.DataScope = 'Auto';
+NAV_BCS_States.Alignment = -1;
+NAV_BCS_States.Elements = elems;
+clear elems;
+assignin('base','NAV_BCS_States', NAV_BCS_States);
+
+% Bus object: NAV_CoordinateTransformations 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'QuaternionNED2EFE';
+elems(1).Dimensions = 4;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'QuaternionNED2BCS';
+elems(2).Dimensions = 4;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+NAV_CoordinateTransformations = Simulink.Bus;
+NAV_CoordinateTransformations.HeaderFile = '';
+NAV_CoordinateTransformations.Description = '';
+NAV_CoordinateTransformations.DataScope = 'Auto';
+NAV_CoordinateTransformations.Alignment = -1;
+NAV_CoordinateTransformations.Elements = elems;
+clear elems;
+assignin('base','NAV_CoordinateTransformations', NAV_CoordinateTransformations);
+
+% Bus object: NAV_EFE_States 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Latitude';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Longitude';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Altitude';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'PositionEFE';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: Components';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+NAV_EFE_States = Simulink.Bus;
+NAV_EFE_States.HeaderFile = '';
+NAV_EFE_States.Description = '';
+NAV_EFE_States.DataScope = 'Auto';
+NAV_EFE_States.Alignment = -1;
+NAV_EFE_States.Elements = elems;
+clear elems;
+assignin('base','NAV_EFE_States', NAV_EFE_States);
+
+% Bus object: NAV_InitialStates 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'InitPositionNED';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: Components';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'InitVelocityNED';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: Components';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'InitQuaternionNED2BCS';
+elems(3).Dimensions = 4;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'InitialLatitude';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'double';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'InitialLongitude';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'double';
+elems(5).SampleTime = -1;
+elems(5).Complexity = 'real';
+elems(5).SamplingMode = 'Sample based';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'InitialAltitude';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'double';
+elems(6).SampleTime = -1;
+elems(6).Complexity = 'real';
+elems(6).SamplingMode = 'Sample based';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+NAV_InitialStates = Simulink.Bus;
+NAV_InitialStates.HeaderFile = '';
+NAV_InitialStates.Description = '';
+NAV_InitialStates.DataScope = 'Auto';
+NAV_InitialStates.Alignment = -1;
+NAV_InitialStates.Elements = elems;
+clear elems;
+assignin('base','NAV_InitialStates', NAV_InitialStates);
+
+% Bus object: NAV_NED_States 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'AccelerationNED';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: Components';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'VelocityNED';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: Components';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'PositionNED';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: Components';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+NAV_NED_States = Simulink.Bus;
+NAV_NED_States.HeaderFile = '';
+NAV_NED_States.Description = '';
+NAV_NED_States.DataScope = 'Auto';
+NAV_NED_States.Alignment = -1;
+NAV_NED_States.Elements = elems;
+clear elems;
+assignin('base','NAV_NED_States', NAV_NED_States);
+
+% Bus object: NavigationStates 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Roll';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'single';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Pitch';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'single';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Yaw';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'single';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'RollRate';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'single';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'PitchRate';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'single';
+elems(5).SampleTime = -1;
+elems(5).Complexity = 'real';
+elems(5).SamplingMode = 'Sample based';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'YawRate';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'single';
+elems(6).SampleTime = -1;
+elems(6).Complexity = 'real';
+elems(6).SamplingMode = 'Sample based';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'VerticalPosition';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'single';
+elems(7).SampleTime = -1;
+elems(7).Complexity = 'real';
+elems(7).SamplingMode = 'Sample based';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'VerticalVelocity';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'single';
+elems(8).SampleTime = -1;
+elems(8).Complexity = 'real';
+elems(8).SamplingMode = 'Sample based';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+NavigationStates = Simulink.Bus;
+NavigationStates.HeaderFile = '';
+NavigationStates.Description = '';
+NavigationStates.DataScope = 'Auto';
+NavigationStates.Alignment = -1;
+NavigationStates.Elements = elems;
+clear elems;
+assignin('base','NavigationStates', NavigationStates);
+
+% Bus object: PWMBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Duty';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'single';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Rev';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'single';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+PWMBus = Simulink.Bus;
+PWMBus.HeaderFile = '';
+PWMBus.Description = '';
+PWMBus.DataScope = 'Auto';
+PWMBus.Alignment = -1;
+PWMBus.Elements = elems;
+clear elems;
+assignin('base','PWMBus', PWMBus);
+
+% Bus object: PositionBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'xPos';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'yPos';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'zPos';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+PositionBus = Simulink.Bus;
+PositionBus.HeaderFile = '';
+PositionBus.Description = '';
+PositionBus.DataScope = 'Auto';
+PositionBus.Alignment = -1;
+PositionBus.Elements = elems;
+clear elems;
+assignin('base','PositionBus', PositionBus);
+
+% Bus object: PropellerState 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'RPM';
+elems(1).Dimensions = 4;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = 0;
+elems(1).Max = 8000;
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+PropellerState = Simulink.Bus;
+PropellerState.HeaderFile = '';
+PropellerState.Description = '';
+PropellerState.DataScope = 'Auto';
+PropellerState.Alignment = -1;
+PropellerState.Elements = elems;
+clear elems;
+assignin('base','PropellerState', PropellerState);
+
+% Bus object: SONAR_Bus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Altitude';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'uint16';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+SONAR_Bus = Simulink.Bus;
+SONAR_Bus.HeaderFile = '';
+SONAR_Bus.Description = '';
+SONAR_Bus.DataScope = 'Auto';
+SONAR_Bus.Alignment = -1;
+SONAR_Bus.Elements = elems;
+clear elems;
+assignin('base','SONAR_Bus', SONAR_Bus);
+
+% Bus object: SensorData 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Accel';
+elems(1).Dimensions = 3;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'SensorOutType';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Gyro';
+elems(2).Dimensions = 3;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'SensorOutType';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Magnetometer';
+elems(3).Dimensions = 3;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'SensorOutType';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'SONAR_Altimeter';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'SensorOutType';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'Barometric_Altimeter';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'SensorOutType';
+elems(5).SampleTime = -1;
+elems(5).Complexity = 'real';
+elems(5).SamplingMode = 'Sample based';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+SensorData = Simulink.Bus;
+SensorData.HeaderFile = '';
+SensorData.Description = '';
+SensorData.DataScope = 'Auto';
+SensorData.Alignment = -1;
+SensorData.Elements = elems;
+clear elems;
+assignin('base','SensorData', SensorData);
+
+% Bus object: StabilityStates 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Velocity';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: Components';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+StabilityStates = Simulink.Bus;
+StabilityStates.HeaderFile = '';
+StabilityStates.Description = '';
+StabilityStates.DataScope = 'Auto';
+StabilityStates.Alignment = -1;
+StabilityStates.Elements = elems;
+clear elems;
+assignin('base','StabilityStates', StabilityStates);
+
+% Bus object: States 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'Position';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: PositionBus';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'Velocity';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: VelocityBus';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'AngularRate';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: AngularRateBus';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'Attitude';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: AttitudeBus';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'Acceleration';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: AccelerationBus';
+elems(5).SampleTime = -1;
+elems(5).Complexity = 'real';
+elems(5).SamplingMode = 'Sample based';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'AngularAcceleration';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: AngularAccelerationBus';
+elems(6).SampleTime = -1;
+elems(6).Complexity = 'real';
+elems(6).SamplingMode = 'Sample based';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+States = Simulink.Bus;
+States.HeaderFile = '';
+States.Description = '';
+States.DataScope = 'Auto';
+States.Alignment = -1;
+States.Elements = elems;
+clear elems;
+assignin('base','States', States);
+
+% Bus object: TransportRateData 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'InertialRateNED';
+elems(1).Dimensions = 3;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'TransportRateNED';
+elems(2).Dimensions = 3;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Re_Meridian_h';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'Re_Normal_h';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'double';
+elems(4).SampleTime = -1;
+elems(4).Complexity = 'real';
+elems(4).SamplingMode = 'Sample based';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+TransportRateData = Simulink.Bus;
+TransportRateData.HeaderFile = '';
+TransportRateData.Description = '';
+TransportRateData.DataScope = 'Auto';
+TransportRateData.Alignment = -1;
+TransportRateData.Elements = elems;
+clear elems;
+assignin('base','TransportRateData', TransportRateData);
+
+% Bus object: VehicleStates 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'BodyState';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: States';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'NEDState';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: States';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'Props';
+elems(3).Dimensions = 4;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+VehicleStates = Simulink.Bus;
+VehicleStates.HeaderFile = '';
+VehicleStates.Description = '';
+VehicleStates.DataScope = 'Auto';
+VehicleStates.Alignment = -1;
+VehicleStates.Elements = elems;
+clear elems;
+assignin('base','VehicleStates', VehicleStates);
+
+% Bus object: VelocityBus 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'xVel';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'double';
+elems(1).SampleTime = -1;
+elems(1).Complexity = 'real';
+elems(1).SamplingMode = 'Sample based';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'yVel';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'double';
+elems(2).SampleTime = -1;
+elems(2).Complexity = 'real';
+elems(2).SamplingMode = 'Sample based';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'zVel';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'double';
+elems(3).SampleTime = -1;
+elems(3).Complexity = 'real';
+elems(3).SamplingMode = 'Sample based';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+VelocityBus = Simulink.Bus;
+VelocityBus.HeaderFile = '';
+VelocityBus.Description = '';
+VelocityBus.DataScope = 'Auto';
+VelocityBus.Alignment = -1;
+VelocityBus.Elements = elems;
+clear elems;
+assignin('base','VelocityBus', VelocityBus);
+

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/26/13||14:19:39" using="SimMechanics Link Version 4.2" from="SolidWorks 20.3.0"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="QUADROTOR" uid="QUADROTOR" version="110">
+<AssemblyFile name="QUADROTOR.sldasm" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="BOARD-1" uid="BOARD-1" entityUid="BOARD*:*Default">
+<Transform>
+<Rotation>-0.707107 0.707107 0 -0.707107 -0.707107 0 0 0 1</Rotation>
+<Translation>0 0 0.0070358</Translation>
+</Transform>
+</Instance>
+<Instance name="ASSY, ROTOR END-1" uid="ASSY, ROTOR END-1" entityUid="ASSY, ROTOR END" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0021844 -1.4e-006 1.4e-006</Translation>
+</Transform>
+<Instance name="TUBE END-1" uid="TUBE END-1" entityUid="TUBE END*:*Default">
+<Transform>
+<Rotation>0 -1 0 1 0 0 0 0 1</Rotation>
+<Translation>0.083058 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="TUBE-1" uid="TUBE-1" entityUid="TUBE*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="MOTOR-1" uid="MOTOR-1" entityUid="MOTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0975336 0 0.0113538</Translation>
+</Transform>
+</Instance>
+<Instance name="CARRIER-1" uid="CARRIER-1" entityUid="CARRIER*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 -0.0076962</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="GEAR-1" uid="GEAR-1" entityUid="GEAR*:*Default">
+<Transform>
+<Rotation>-1 0 0 0 1 0 0 0 -1</Rotation>
+<Translation>0.108597 0 -0.0112522</Translation>
+</Transform>
+</Instance>
+<Instance name="SHAFT-1" uid="SHAFT-1" entityUid="SHAFT*:*Default">
+<Transform>
+<Rotation>0 1 0 0 0 1 1 0 0</Rotation>
+<Translation>0.108597 0 -0.0155702</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Diffuse r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Specular r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="ROTOR-1" uid="ROTOR-1" entityUid="ROTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 0.0110998</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+</Instance>
+<Instance name="ASSY, ROTOR END-2" uid="ASSY, ROTOR END-2" entityUid="ASSY, ROTOR END" rigid="true">
+<Transform>
+<Rotation>0 1 0 -1 0 0 0 0 1</Rotation>
+<Translation>-1.4e-006 -0.0021844 1.4e-006</Translation>
+</Transform>
+<Instance name="TUBE END-1" uid="TUBE END-1" entityUid="TUBE END*:*Default">
+<Transform>
+<Rotation>0 -1 0 1 0 0 0 0 1</Rotation>
+<Translation>0.083058 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="TUBE-1" uid="TUBE-1" entityUid="TUBE*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="MOTOR-1" uid="MOTOR-1" entityUid="MOTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0975336 0 0.0113538</Translation>
+</Transform>
+</Instance>
+<Instance name="CARRIER-1" uid="CARRIER-1" entityUid="CARRIER*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 -0.0076962</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="GEAR-1" uid="GEAR-1" entityUid="GEAR*:*Default">
+<Transform>
+<Rotation>-1 0 0 0 1 0 0 0 -1</Rotation>
+<Translation>0.108597 0 -0.0112522</Translation>
+</Transform>
+</Instance>
+<Instance name="SHAFT-1" uid="SHAFT-1" entityUid="SHAFT*:*Default">
+<Transform>
+<Rotation>0 1 0 0 0 1 1 0 0</Rotation>
+<Translation>0.108597 0 -0.0155702</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Diffuse r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Specular r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="ROTOR-1" uid="ROTOR-1" entityUid="ROTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 0.0110998</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+</Instance>
+<Instance name="ASSY, ROTOR END-3" uid="ASSY, ROTOR END-3" entityUid="ASSY, ROTOR END" rigid="true">
+<Transform>
+<Rotation>-1 0 0 0 -1 0 0 0 1</Rotation>
+<Translation>-0.0021844 1.4e-006 1.4e-006</Translation>
+</Transform>
+<Instance name="TUBE END-1" uid="TUBE END-1" entityUid="TUBE END*:*Default">
+<Transform>
+<Rotation>0 -1 0 1 0 0 0 0 1</Rotation>
+<Translation>0.083058 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="TUBE-1" uid="TUBE-1" entityUid="TUBE*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="MOTOR-1" uid="MOTOR-1" entityUid="MOTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0975336 0 0.0113538</Translation>
+</Transform>
+</Instance>
+<Instance name="CARRIER-1" uid="CARRIER-1" entityUid="CARRIER*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 -0.0076962</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="GEAR-1" uid="GEAR-1" entityUid="GEAR*:*Default">
+<Transform>
+<Rotation>-1 0 0 0 1 0 0 0 -1</Rotation>
+<Translation>0.108597 0 -0.0112522</Translation>
+</Transform>
+</Instance>
+<Instance name="SHAFT-1" uid="SHAFT-1" entityUid="SHAFT*:*Default">
+<Transform>
+<Rotation>0 1 0 0 0 1 1 0 0</Rotation>
+<Translation>0.108597 0 -0.0155702</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Diffuse r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Specular r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="ROTOR-1" uid="ROTOR-1" entityUid="ROTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 0.0110998</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="0" b="0" a="1"/>
+<Diffuse r="1" g="0" b="0" a="1"/>
+<Specular r="1" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+</Instance>
+<Instance name="ASSY, ROTOR END-4" uid="ASSY, ROTOR END-4" entityUid="ASSY, ROTOR END" rigid="true">
+<Transform>
+<Rotation>0 -1 0 1 0 0 0 0 1</Rotation>
+<Translation>1.4e-006 0.0021844 1.4e-006</Translation>
+</Transform>
+<Instance name="TUBE END-1" uid="TUBE END-1" entityUid="TUBE END*:*Default">
+<Transform>
+<Rotation>0 -1 0 1 0 0 0 0 1</Rotation>
+<Translation>0.083058 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="TUBE-1" uid="TUBE-1" entityUid="TUBE*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="MOTOR-1" uid="MOTOR-1" entityUid="MOTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0975336 0 0.0113538</Translation>
+</Transform>
+</Instance>
+<Instance name="CARRIER-1" uid="CARRIER-1" entityUid="CARRIER*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 -0.0076962</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="GEAR-1" uid="GEAR-1" entityUid="GEAR*:*Default">
+<Transform>
+<Rotation>-1 0 0 0 1 0 0 0 -1</Rotation>
+<Translation>0.108597 0 -0.0112522</Translation>
+</Transform>
+</Instance>
+<Instance name="SHAFT-1" uid="SHAFT-1" entityUid="SHAFT*:*Default">
+<Transform>
+<Rotation>0 1 0 0 0 1 1 0 0</Rotation>
+<Translation>0.108597 0 -0.0155702</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Diffuse r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Specular r="0.752941" g="0.752941" b="0.752941" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="ROTOR-1" uid="ROTOR-1" entityUid="ROTOR*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.108597 0 0.0110998</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="0" b="0" a="1"/>
+<Diffuse r="1" g="0" b="0" a="1"/>
+<Specular r="1" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+</Instance>
+<Instance name="HUB-1" uid="HUB-1" entityUid="HUB*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Diffuse r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Specular r="0.25098" g="0.25098" b="0.25098" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="ASSY, ROTOR END" uid="ASSY, ROTOR END" version="114">
+<ModelUnits mass="kilogram" length="inch"/>
+<AssemblyFile name="ASSY, ROTOR END.sldasm" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="BOARD" uid="BOARD*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="BOARD.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0012649</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>1.02053e-007 1.53345e-007 2.55159e-007 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="BOARD_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="CARRIER" uid="CARRIER*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="CARRIER.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00147907</Mass>
+<CenterOfMass>-0.00084424 -2.46714e-007 -0.00131766</CenterOfMass>
+<Inertia>2.74244e-007 3.18119e-007 1.87061e-007 -4.05546e-012 -9.16254e-008 6.06106e-012</Inertia>
+</MassProperties>
+<GeometryFile name="CARRIER_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="GEAR" uid="GEAR*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="GEAR.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.000360744</Mass>
+<CenterOfMass>1.89985e-009 2.88238e-006 0.000141243</CenterOfMass>
+<Inertia>8.70253e-009 8.70641e-009 1.68897e-008 1.94038e-012 5.3724e-016 -3.33649e-015</Inertia>
+</MassProperties>
+<GeometryFile name="GEAR_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="HUB" uid="HUB*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="HUB.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00350731</Mass>
+<CenterOfMass>9.37114e-005 0.000376004 -0.000524878</CenterOfMass>
+<Inertia>6.93787e-007 6.64808e-007 1.28868e-006 -1.1253e-008 1.70784e-010 2.12184e-009</Inertia>
+</MassProperties>
+<GeometryFile name="HUB_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MOTOR" uid="MOTOR*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="MOTOR.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00111343</Mass>
+<CenterOfMass>0 0 -0.00995894</CenterOfMass>
+<Inertia>4.36489e-008 4.36489e-008 9.75088e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="MOTOR_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="ROTOR" uid="ROTOR*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="ROTOR.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00139186</Mass>
+<CenterOfMass>-7.68755e-009 -2.61909e-009 0.0119208</CenterOfMass>
+<Inertia>2.6788e-008 1.57181e-006 1.57105e-006 -9.34636e-015 2.38869e-014 -2.9933e-008</Inertia>
+</MassProperties>
+<GeometryFile name="ROTOR_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SHAFT" uid="SHAFT*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="SHAFT.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.000273989</Mass>
+<CenterOfMass>0.0192824 0 1.85515e-005</CenterOfMass>
+<Inertia>3.1531e-010 3.27447e-008 3.27503e-008 0 -8.18726e-011 0</Inertia>
+</MassProperties>
+<GeometryFile name="SHAFT_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="TUBE END" uid="TUBE END*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="TUBE END.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00141823</Mass>
+<CenterOfMass>-0.000177553 -0.000768729 0.00196446</CenterOfMass>
+<Inertia>1.20267e-007 6.64209e-008 8.0078e-008 -3.0273e-008 4.56875e-010 8.79804e-010</Inertia>
+</MassProperties>
+<GeometryFile name="TUBE END_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="TUBE" uid="TUBE*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="TUBE.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00058216</Mass>
+<CenterOfMass>0.041275 0 0</CenterOfMass>
+<Inertia>1.06458e-009 3.31127e-007 3.31127e-007 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="TUBE_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>
