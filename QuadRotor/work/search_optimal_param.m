@@ -1,8 +1,11 @@
 function [x,fval]=search_optimal_param
-
+options = optimoptions('fmincon','Display','iter','Algorithm','sqp');
+options.OptimalityTolerance=1;
+    options.FunctionTolerance=1;
+    options.StepTolerance=1; 
 x0 = 1e-2;
-A =[]; b=[]; Aeq=[];beq=[];VLB=0;VUB=[];
-[x,fval]=fmincon(@obj_fun,x0,A,b,Aeq,beq,VLB,VUB);
+A =[]; b=[]; Aeq=[];beq=[];VLB=1e-4;VUB=[];
+[x,fval]=fmincon(@obj_fun,x0,A,b,Aeq,beq,VLB,VUB,[],options );
 
 % Àý1£ºmin f = -x1 - 2*x2 + 1/2*x1^2 + 1/2 * x2^2
 % 2*x1 + 3*x2 <= 6
