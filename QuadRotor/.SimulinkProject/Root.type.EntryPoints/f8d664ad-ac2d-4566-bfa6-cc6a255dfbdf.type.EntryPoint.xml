@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Info Name="Quadrotor_Controller" Type="Basic" File="Models/Quadrotor_Controller.slx" />
+<Info Type="Basic" Visible="1" Icon="" File="Models/Quadrotor_Controller.slx" Name="Quadrotor_Controller" />

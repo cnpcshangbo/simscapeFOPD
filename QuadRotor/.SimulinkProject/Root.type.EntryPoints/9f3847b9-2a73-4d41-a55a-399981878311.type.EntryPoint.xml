@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Info Name="set_up_project" Type="StartUp" File="utilities/set_up_project.m" />
+<Info Type="StartUp" Visible="1" Icon="" File="utilities/set_up_project.m" Name="set_up_project" />
