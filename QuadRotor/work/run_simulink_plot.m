@@ -1,6 +1,6 @@
 %%
-assignin('base','wb',1e-10);
-assignin('base','wh',1e-10);
+assignin('base','wb',1e-3);
+assignin('base','wh',1e7);
 sim('../Models/Quadrotor_Controller.slx');
 figure(1);
 hold on
