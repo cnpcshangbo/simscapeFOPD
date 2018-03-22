@@ -5,7 +5,7 @@ Forked from:
 
 https://www.mathworks.com/videos/quadcopter-simulation-and-control-made-easy-93365.html
 
-Publication:
+Publications:
 
 Bo Shang, Chengdong Wu, Yunzhou Zhang, YangQuan Chen. Fractional Order Flight Control of Quadrotor UAS: A Simscape Benchmark Environment and A Case Study. 2018 IEEE Chinese Guidance, Navigation and Control Conference (CGNCC), Xiamen, 2018, pp. 1-6. (under review)
 
@@ -18,7 +18,7 @@ Videos:
 Movies on how the simulation works can be accessed at:
 http://list.youku.com/albumlist/show/id_51604678.html
 
-FAQ:
+FAQs:
 
 https://github.com/cnpcshangbo/simscapeFOPD/issues
 Feel free to ask your own qustions.
