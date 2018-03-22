@@ -18,3 +18,6 @@ http://list.youku.com/albumlist/show/id_51604678.html
 FAQ:
 https://github.com/cnpcshangbo/simscapeFOPD/issues
 Feel free to ask your own qustions.
+
+Contact us:
+cnpcshangbo@gmail.com
