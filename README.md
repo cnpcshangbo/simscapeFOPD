@@ -7,7 +7,7 @@ https://www.mathworks.com/videos/quadcopter-simulation-and-control-made-easy-933
 
 Publications:
 
-Bo Shang, Chengdong Wu, Yunzhou Zhang, YangQuan Chen. Fractional Order Flight Control of Quadrotor UAS: A Simscape Benchmark Environment and A Case Study. 2018 IEEE Chinese Guidance, Navigation and Control Conference (CGNCC), Xiamen, 2018, pp. 1-6. (under review)
+Bo Shang, Chengdong Wu, Yunzhou Zhang, YangQuan Chen. Fractional Order Flight Control of Quadrotor UAS: A Simscape Benchmark Environment and A Case Study. 2018 IEEE Chinese Guidance, Navigation and Control Conference (CGNCC), Xiamen, 2018, pp. 1-6. (accepted)
 
 To request the preprint version:
 
