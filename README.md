@@ -7,9 +7,9 @@ https://www.mathworks.com/videos/quadcopter-simulation-and-control-made-easy-933
 
 ## Cititions:
 ```
-@inproceedings{bo2018fractionalsimscape,
+@inproceedings{shang2018fractional_simscape_gncc,
   title={Fractional Order Flight Control of Quadrotor UAS: A Simscape Benchmark Environment and A Case Study},
-  author={Bo Shang and Chengdong Wu and Yunzhou Zhang and YangQuan Chen},
+  author={Shang, Bo and Wu, Chengdong and Zhang, Yunzhou and Chen, YangQuan},
   booktitle={2018 IEEE Chinese Guidance, Navigation and Control Conference (CGNCC)},
   pages={1-6},
   year={2018},
